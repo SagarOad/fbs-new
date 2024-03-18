@@ -7,6 +7,11 @@ import Benefits from "@/Components/Benefits";
 import ProjectsSection from "@/Components/ProjectsSection";
 import VideoSection from "@/Sections/VideoSection";
 import { useRef } from "react";
+import Recognitions from "@/Sections/Recognitions";
+import Testimonials from "@/Sections/Testimonials";
+import Faqs from "@/Sections/Faqs";
+import Contact from "@/Sections/Contact";
+import Footer from "@/Sections/Footer";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -73,6 +78,11 @@ export default function Home() {
       <Benefits />
       <ProjectsSection />
       <VideoSection />
+      <Recognitions />
+      <Testimonials />
+      <Faqs />
+      <Contact />
+      <Footer />
     </div>
   );
 }
