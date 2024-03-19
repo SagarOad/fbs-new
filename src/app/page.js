@@ -12,6 +12,7 @@ import Testimonials from "@/Sections/Testimonials";
 import Faqs from "@/Sections/Faqs";
 import Contact from "@/Sections/Contact";
 import Footer from "@/Sections/Footer";
+import Portofolio from "@/Sections/Portofolio";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -78,8 +79,9 @@ export default function Home() {
       <Benefits />
       <ProjectsSection />
       <VideoSection />
-      <Recognitions />
+      <Portofolio />
       <Testimonials />
+      <Recognitions />
       <Faqs />
       <Contact />
       <Footer />
