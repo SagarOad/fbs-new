@@ -12,9 +12,9 @@ import {
 
 const Testimonials = () => {
   return (
-    <div className=" px-12">
+    <div className=" px-12 py-14 ">
       <div className=" md:w-[40%] mx-auto flex items-center justify-center">
-        <h2 className=" text-center leading-10 mb-2 font-bold text-[1.9rem]">
+        <h2 className=" text-center leading-10 font-bold text-[2.5rem]">
           Testimonials
           <hr className=" bg-black h-1 w-[50%] mt-3 mx-auto" />
         </h2>

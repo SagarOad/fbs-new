@@ -10,7 +10,7 @@ import {
     return (
       <div className="my-16 py-16">
         <div className=" md:w-[40%] mx-auto flex items-center justify-center">
-          <h2 className=" text-center leading-10 mb-2 font-bold text-[1.9rem]">
+          <h2 className="  text-center leading-10 font-bold text-[2.5rem] mb-8">
             FAQ's - Frequesntly asked questions
             <hr className=" bg-black h-1 w-[50%] mt-3 mx-auto" />
           </h2>

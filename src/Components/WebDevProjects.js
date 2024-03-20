@@ -154,6 +154,61 @@ const WebDevProjects = () => {
           </div>
         </div>
       </section>
+
+      {/* <div class="">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0">
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <a href="https://bravogroup.us/" target="_blank">
+              <Image
+                alt="gallery"
+                className="w-full h-56 object-cover object-center"
+                src={Image1}
+              />
+            </a>
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://via.placeholder.com/400"
+              alt="Portfolio Image"
+            />
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://via.placeholder.com/400"
+              alt="Portfolio Image"
+            />
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://via.placeholder.com/400"
+              alt="Portfolio Image"
+            />
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://via.placeholder.com/400"
+              alt="Portfolio Image"
+            />
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+          <div class="bg-white overflow-hidden relative portfolio-item">
+            <img
+              class="w-full h-56 object-cover object-center"
+              src="https://via.placeholder.com/400"
+              alt="Portfolio Image"
+            />
+            <div class="absolute inset-0 bg-black opacity-0 hover:opacity-50 transition-opacity"></div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

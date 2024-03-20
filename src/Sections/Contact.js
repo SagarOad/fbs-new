@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className=" bg-[#7ed6f31c] mb-[420px] my-16 py-16">
       <div className=" md:w-[40%] mx-auto flex items-center justify-center">
-        <h2 className=" text-center leading-10 mb-10 font-bold text-[1.9rem]">
+        <h2 className=" text-center leading-10 font-bold text-[2.5rem] mb-8">
           Get a free quote!
           <hr className=" bg-black h-1 w-[50%] mt-3 mx-auto" />
         </h2>

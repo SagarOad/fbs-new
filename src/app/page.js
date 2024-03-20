@@ -13,6 +13,8 @@ import Faqs from "@/Sections/Faqs";
 import Contact from "@/Sections/Contact";
 import Footer from "@/Sections/Footer";
 import Portofolio from "@/Sections/Portofolio";
+import Pricing from "@/Sections/Pricing";
+import Process from "@/Sections/Process";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -80,9 +82,11 @@ export default function Home() {
       <ProjectsSection />
       <VideoSection />
       <Portofolio />
+      <Process />
       <Testimonials />
       <Recognitions />
       <Faqs />
+      <Pricing />
       <Contact />
       <Footer />
     </div>
