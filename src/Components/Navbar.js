@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -81,10 +82,10 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 hover:text-white duration-200 link-underline"
+            className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline"
           >
             <Link href={link}>
-              <NavigationMenu>
+              <NavigationMenu className="nav-menu">
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   {link}
                 </NavigationMenuLink>

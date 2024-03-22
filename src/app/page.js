@@ -40,7 +40,7 @@ export default function Home() {
         ></video>
         <div className="min-h-[400px] bg-[#00000090] absolute w-[100%] inset-0">
           <div className="flex flex-col justify-center items-center h-[100%] text-white py-0 px-10">
-            <h2 className="text-[5.6rem] leading-[95px] mb-6 text-center font-black">
+            <h2 className="text-[5.5rem] leading-[95px] mb-6 text-center font-black">
               We're Your <span className=" text-[#25aae1]">One-Stop Solution</span> for Efficient Apps Development
             </h2>
             <hr className="h-[6px] border-0 bg-[white] mt-2 mb-3 w-[20%]" />

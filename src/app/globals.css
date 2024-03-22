@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "prosto";
+  src: url("../assets//fonts/TT\ Prosto\ Sans\ Trial\ Black.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "prosto-regular";
+  src: url("../assets//fonts/TT\ Prosto\ Sans\ Trial\ Condensed\ Regular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: "prosto";
+  src: url("../assets//fonts/TT\ Prosto\ Sans\ Trial\ Black.otf")
+    format("opentype");
+}
+
 .inline-flex.h-10.items-center.justify-center.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400 {
   width: 100%;
 }
@@ -45,6 +61,19 @@ ul.font-bold.list-container {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #002244;
+}
+
+.nav-menu a:hover {
+  color: white;
+}
+
+div#radix-\:r5\: {
+  z-index: 10000;
+}
+
+.service-main {
+  background: rgb(0, 34, 68);
+  background: linear-gradient(165deg, rgb(0 0 43) 0%, rgb(37 170 182) 100%);
 }
 
 /* .inline-flex.h-10.items-center.justify-center.rounded-md.bg-slate-100.p-1.text-slate-500.dark\:bg-slate-800.dark\:text-slate-400 {

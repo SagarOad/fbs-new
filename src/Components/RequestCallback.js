@@ -8,18 +8,21 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-
 const RequestCallback = () => {
-    
   return (
     <div>
       <Sheet>
-        <SheetTrigger className=" bg-white text-[18px] border-2 border-[#a2a2a2] left-[-100px] fixed font-medium py-4 px-12 rotate-90">
+        <SheetTrigger className=" bg-white text-[18px] border-2 z-[9999] border-[#a2a2a2] left-[-105px] fixed font-medium py-4 px-12 rotate-90">
           Request a Callback
         </SheetTrigger>
-        <SheetContent side="left" className="h-[60%] top-[20%] flex justify-center items-center">
+        <SheetContent
+          side="left"
+          className="h-[60%] top-[20%] flex justify-center items-center"
+        >
           <SheetHeader className="w-[100%]">
-            <SheetTitle className=" text-[26px]">Request a Call Back</SheetTitle>
+            <SheetTitle className=" text-[26px]">
+              Request a Call Back
+            </SheetTitle>
             <SheetDescription>
               <form id="MyForm" className="m-0 w-[100%] my-8">
                 <div
@@ -29,7 +32,7 @@ const RequestCallback = () => {
                   <input
                     type="text"
                     className="peer border-[1px] py-3 border-black block min-h-[auto] w-full rounded  bg-transparent px-3 leading-[0.9] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary"
-                    id="exampleInput90"
+                    id="name"
                     placeholder="Name"
                     required
                   />
@@ -44,7 +47,7 @@ const RequestCallback = () => {
                   <input
                     type="email"
                     className="peer border-[1px] py-3 border-black block min-h-[auto] w-full rounded  bg-transparent px-3 leading-[0.9] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary"
-                    id="exampleInput91"
+                    id="email"
                     placeholder="Email address"
                     required
                   />
@@ -56,7 +59,7 @@ const RequestCallback = () => {
                   <input
                     type="text"
                     className="peer border-[1px] py-3 border-black block min-h-[auto] w-full rounded  bg-transparent px-3 leading-[0.9] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary"
-                    id="exampleInput91"
+                    id="contact"
                     placeholder="Your Contact"
                     required
                   />
@@ -68,7 +71,7 @@ const RequestCallback = () => {
                   <textarea
                     rows={5}
                     className="peer border-[1px] py-3 border-black block min-h-[auto] w-full rounded  bg-transparent px-3 leading-[0.9] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary"
-                    id="exampleFormControlTextarea1"
+                    id="message"
                     placeholder="Your message"
                     required
                   ></textarea>

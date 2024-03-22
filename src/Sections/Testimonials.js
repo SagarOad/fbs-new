@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "@/assets/5385893.JPG";
+import img1 from "@/assets/testmonials.JPG";
 import Image from "next/image";
 
 import {
@@ -14,17 +14,18 @@ const Testimonials = () => {
   return (
     <div className=" px-12 py-14 ">
       <div className=" md:w-[40%] mx-auto flex items-center justify-center">
-        <h2 className=" text-center leading-10 font-bold text-[2.5rem]">
-          Testimonials
-          <hr className=" bg-black h-1 w-[50%] mt-3 mx-auto" />
-        </h2>
+      
       </div>
       <div className=" grid grid-cols-12 justify-center items-center">
         <div className=" col-span-5">
           <Image src={img1} className=" w-[730px] mx-auto" />
         </div>
         <div className="col-span-7">
-          <Carousel className="w-full mx-auto max-w-[800px]">
+        <h2 className=" text-center leading-10 font-bold text-[2.5rem]">
+          Testimonials
+          <hr className=" bg-black h-1 w-[30%] mt-3 mx-auto" />
+        </h2>
+          <Carousel className="w-full shadow-lg mx-auto max-w-[800px]">
             <CarouselContent>
               <CarouselItem>
                 <div className="bg-white">
