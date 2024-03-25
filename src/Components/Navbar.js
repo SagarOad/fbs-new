@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
+import logo from "@/assets/logo.PNG";
 import {
   Cloud,
   CreditCard,
@@ -77,14 +79,10 @@ const Navbar = () => {
     >
       <div>
         <h1 className="text-5xl font-signature ml-2">
-          <a
-            className="link-underline link-underline-black"
-            href=""
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link className="link-underline link-underline-black" href="/">
+            {/* <Image src={logo} /> */}
             Fbs
-          </a>
+          </Link>
         </h1>
       </div>
 
