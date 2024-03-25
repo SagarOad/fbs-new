@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className=" bg-[#7ed6f31c] mb-[420px] my-16 py-16">
+    <div className=" bg-[#7ed6f31c] my-16 py-16">
       <div className=" md:w-[40%] mx-auto flex items-center justify-center">
         <h2 className=" text-center leading-10 font-bold text-[2.5rem] mb-8">
           Get a free quote!

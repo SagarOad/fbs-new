@@ -9,7 +9,7 @@ import GraphicsDesignTemplate from "./GraphicsDesignTemplate";
 const ProjectsSection = () => {
   return (
     <>
-      <div className=" md:w-[40%] mx-auto mt-20 flex items-center justify-center">
+      <div id="services" className=" md:w-[40%] mx-auto mt-20 flex items-center justify-center">
         <h2 className=" text-center leading-10 font-bold text-[1.9rem]">
           From Mobile Apps, Business Dashboards and E-Commerce Stores to
           Remarkable Web Apps We Do it All!

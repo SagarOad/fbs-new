@@ -3,46 +3,56 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  Cloud,
+  CreditCard,
+  Github,
+  Keyboard,
+  LifeBuoy,
+  LogOut,
+  Mail,
+  MessageSquare,
+  Plus,
+  PlusCircle,
+  Settings,
+  User,
+  UserPlus,
+  Users,
+} from "lucide-react";
 
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const links = [
-    {
-      id: 1,
-      link: "HOME",
-    },
-    {
-      id: 2,
-      link: "ABOUT US",
-    },
-    {
-      id: 3,
-      link: "PORTFOLIO",
-    },
-    {
-      id: 4,
-      link: "EXPERIENCE",
-    },
-    {
-      id: 5,
-      link: "CONTACT",
-    },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +71,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex justify-between px-24 z-50 items-center w-full h-20 text-white fixed nav ${
+      className={`flex justify-between px-24 z-[99] items-center w-full h-20 text-white fixed nav ${
         scrolled ? "bg-black" : "bg-transparent h-28"
       } transition-all duration-300 ease-in-out`}
     >
@@ -79,20 +89,55 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline"
-          >
-            <Link href={link}>
-              <NavigationMenu className="nav-menu">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {link}
-                </NavigationMenuLink>
-              </NavigationMenu>
-            </Link>
-          </li>
-        ))}
+        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
+          <Link href="/">HOME</Link>
+        </li>
+        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
+          <Menubar>
+            <MenubarMenu>
+              <MenubarTrigger className=" menu-bar">
+                <p className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
+                  SERVICES
+                </p>
+              </MenubarTrigger>
+              <MenubarContent className=" mt-6 shadow-lg border-2">
+                <MenubarItem>Mobile Application</MenubarItem>
+                <MenubarItem>
+                  <Link href="/services/web-dev">Web Development</Link>
+                </MenubarItem>
+                <MenubarItem>Digtal Marketing</MenubarItem>
+                <MenubarItem>2D / 3D Animation</MenubarItem>
+                <MenubarItem>Graphics Design</MenubarItem>
+              </MenubarContent>
+            </MenubarMenu>
+          </Menubar>
+          {/* <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button variant="outline">SERVICES</button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56">
+                <DropdownMenuSeparator />
+                  <DropdownMenuItem>
+                    <span>Profile</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <span>Billing</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <span>Settings</span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <span>Keyboard shortcuts</span>
+                  </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu> */}
+        </li>
+        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
+          <Link href="/about">ABOUT</Link>
+        </li>
+        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
+          <Link href="investment">STARTUP INVESTMENT</Link>
+        </li>
       </ul>
 
       <div
@@ -104,16 +149,19 @@ const Navbar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
-            >
-              <Link onClick={() => setNav(!nav)} href={link}>
-                {link}
-              </Link>
-            </li>
-          ))}
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">HOME</li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            <a>SERVICES</a>
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            PROJECTS
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            ABOUT
+          </li>
+          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+            STARTUP INVESTMENT
+          </li>
         </ul>
       )}
     </div>

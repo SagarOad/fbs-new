@@ -11,10 +11,10 @@ import Recognitions from "@/Sections/Recognitions";
 import Testimonials from "@/Sections/Testimonials";
 import Faqs from "@/Sections/Faqs";
 import Contact from "@/Sections/Contact";
-import Footer from "@/Sections/Footer";
 import Portofolio from "@/Sections/Portofolio";
 import Pricing from "@/Sections/Pricing";
 import Process from "@/Sections/Process";
+import ContactDrawer from "@/Components/ContactDrawer";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -73,9 +73,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute top-[50%] left-[-131px]">
-          <RequestCallback />
-        </div>
       </div>
 
       <Benefits />
@@ -88,7 +85,6 @@ export default function Home() {
       <Faqs />
       <Pricing />
       <Contact />
-      <Footer />
     </div>
   );
 }

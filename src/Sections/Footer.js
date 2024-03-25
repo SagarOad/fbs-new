@@ -8,7 +8,7 @@ import { FaRegPaperPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" relative z-[999] mt-14">
+    <div className=" relative z-[999] mt-[420px]">
       <svg
         className="footer-bg-blue absolute bottom-0 d-none d-lg-block"
         viewBox="0 0 1440 405"
