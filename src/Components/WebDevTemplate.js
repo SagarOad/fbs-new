@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaDotCircle } from "react-icons/fa";
 import webDev from "../assets/Services/web-dev.JPG"
-import Image from "next/image";
 
 const WebDevTemplate = () => {
   return (
@@ -36,7 +35,7 @@ const WebDevTemplate = () => {
         </div>
       </div>
       <div className="col-span-4">
-      <Image className=" w-[90%] ml-auto rounded-2xl" src={webDev} />
+      <img className=" w-[90%] ml-auto rounded-2xl" src={webDev} />
       </div>
     </div>
   )
