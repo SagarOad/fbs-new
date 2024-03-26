@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaDotCircle } from "react-icons/fa";
-import animation from "../assets/Services/animation.JPG"
+import animation from "@/assets/Services/animation.JPG"
 import Image from "next/image";
 
 const AnimationTemplate = () => {
