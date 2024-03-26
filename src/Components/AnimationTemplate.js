@@ -1,6 +1,7 @@
 import React from "react";
 import { FaDotCircle } from "react-icons/fa";
-// import animation from "@/assets/Services/animation.JPG"
+import animation from "../assets/Services/animation.jpg"
+import Image from "next/image";
 
 const AnimationTemplate = () => {
   return (
@@ -45,8 +46,8 @@ const AnimationTemplate = () => {
         </div>
       </div>
       <div className="col-span-4">
-        Mobile Dev image
-        {/* <img className=" w-[90%] ml-auto rounded-2xl" src={animation} /> */}
+        {/* Mobile Dev image */}
+        <Image className=" w-[90%] ml-auto rounded-2xl" src={animation} />
       </div>
     </div>
   );
