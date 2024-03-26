@@ -1,7 +1,7 @@
 import React from "react";
 import webmock from "../../../assets/Service-mocks/webmock.webp";
 import Image from "next/image";
-import webmock2 from "../../../assets/Service-mocks/img-mockup.PNG";
+import webmock2 from "../../../assets/Service-mocks/img-mockup.png";
 import { MdWeb } from "react-icons/md";
 
 const page = () => {
