@@ -2,20 +2,11 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
-
-
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarTrigger,
-} from "@/components/ui/menubar";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,91 +29,57 @@ const Navbar = () => {
         scrolled ? "bg-black" : "bg-transparent h-28"
       } transition-all duration-300 ease-in-out`}
     >
-      <div>
-        <h1 className="text-5xl font-signature ml-2">
-          <Link className="link-underline link-underline-black" href="/">
-            {/* <Image src={logo} /> */}
-            Fbs
-          </Link>
-        </h1>
+      <div class="px-6 lg:container lg:mx-auto lg:py-4">
+        <div class="flex items-center justify-between">
+          <div class="relative z-20">
+            <a className=" text-[36px]" href="#">
+              Fbs
+            </a>
+          </div>
+
+          <div class="flex items-center justify-end border-l lg:border-l-0">
+            <input
+              type="checkbox"
+              name="hamburger"
+              id="hamburger"
+              class="peer"
+              hidden
+            />
+            <label
+              for="hamburger"
+              class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
+            >
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 rounded bg-sky-900 transition duration-300"
+              ></div>
+              <div
+                aria-hidden="true"
+                class="m-auto mt-2 h-0.5 w-6 rounded bg-sky-900 transition duration-300"
+              ></div>
+            </label>
+
+            <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-white border-r shadow-xl transition duration-300 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
+              <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
+                <ul class=" pt-32 space-y-8 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
+                  <li>
+                    <Link href="/">HOME</Link>
+                  </li>
+                  <li>
+                    <Link href="#">SERVICES</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">ABOUT</Link>
+                  </li>
+                  <li>
+                    <Link href="/investment">STARTUP INVESTMENT</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <ul className="hidden md:flex">
-        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
-          <Link href="/">HOME</Link>
-        </li>
-        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
-          <Menubar>
-            <MenubarMenu>
-              <MenubarTrigger className=" menu-bar">
-                <p className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
-                  SERVICES
-                </p>
-              </MenubarTrigger>
-              <MenubarContent className=" mt-6 shadow-lg border-2">
-                <MenubarItem>Mobile Application</MenubarItem>
-                <MenubarItem>
-                  <Link href="/services/web-dev">Web Development</Link>
-                </MenubarItem>
-                <MenubarItem>Digtal Marketing</MenubarItem>
-                <MenubarItem>2D / 3D Animation</MenubarItem>
-                <MenubarItem>Graphics Design</MenubarItem>
-              </MenubarContent>
-            </MenubarMenu>
-          </Menubar>
-          {/* <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button variant="outline">SERVICES</button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                <DropdownMenuSeparator />
-                  <DropdownMenuItem>
-                    <span>Profile</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <span>Billing</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <span>Settings</span>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <span>Keyboard shortcuts</span>
-                  </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu> */}
-        </li>
-        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
-          <Link href="/about">ABOUT</Link>
-        </li>
-        <li className="nav-links px-4 cursor-pointer capitalize text-[17px] font-[400] text-white hover:scale-105 duration-200 link-underline">
-          <Link href="investment">STARTUP INVESTMENT</Link>
-        </li>
-      </ul>
-
-      <div
-        onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-white md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-      </div>
-
-      {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">HOME</li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            <a>SERVICES</a>
-          </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            PROJECTS
-          </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            ABOUT
-          </li>
-          <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
-            STARTUP INVESTMENT
-          </li>
-        </ul>
-      )}
     </div>
   );
 };

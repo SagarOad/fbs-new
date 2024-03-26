@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { FaDotCircle } from "react-icons/fa";
-import graphicsDesign from "../assets/Services/graphics-design.JPG"
+// import graphicsDesign from "../assets/Services/graphics-design.JPG"
 
 const GraphicsDesignTemplate = () => {
   return (
@@ -37,8 +37,9 @@ const GraphicsDesignTemplate = () => {
       </div>
     </div>
     <div className="col-span-4">
+      Graphics Design Image
       {/* <img src='../assets/Services/graphics-design.JPG' alt='image' /> */}
-    <img className=" w-[90%] ml-auto rounded-2xl" src={graphicsDesign} />
+    {/* <img className=" w-[90%] ml-auto rounded-2xl" src={graphicsDesign} /> */}
     </div>
   </div>
   )

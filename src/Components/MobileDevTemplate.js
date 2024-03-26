@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDotCircle } from "react-icons/fa";
-import MobileDev from "../assets/Services/app-dev.JPG"
+// import MobileDev from "../assets/Services/app-dev.JPG"
 // import Image from "next/image";
 
 
@@ -37,7 +37,8 @@ const MobileDevTemplate = () => {
         </div>
       </div>
       <div className="col-span-4">
-      <img className=" w-[90%] ml-auto rounded-2xl" src={MobileDev} />
+        Mobile Dev image
+      {/* <img className=" w-[90%] ml-auto rounded-2xl" src={MobileDev} /> */}
       </div>
     </div>
   );
