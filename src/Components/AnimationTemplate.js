@@ -46,7 +46,6 @@ const AnimationTemplate = () => {
         </div>
       </div>
       <div className="col-span-4">
-        {/* Mobile Dev image */}
         <Image className=" w-[90%] ml-auto rounded-2xl" src={animation} />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaDotCircle } from "react-icons/fa";
-// import digitalMarketing from "../assets/Services/digital-marketing.JPG"
+import digitalMarketing from "../assets/Services/digital-marketing.jpg"
+import Image from "next/image";
 
 const DigitalMarketingTemplate = () => {
   return (
@@ -43,8 +44,7 @@ const DigitalMarketingTemplate = () => {
         </div>
       </div>
       <div className="col-span-4">
-        Digital marketing image
-        {/* <img className=" w-[90%] ml-auto rounded-2xl" src={digitalMarketing} /> */}
+        <Image className=" w-[90%] ml-auto rounded-2xl" src={digitalMarketing} />
       </div>
     </div>
   );
