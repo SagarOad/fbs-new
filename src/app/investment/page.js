@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import investment from "@/assets/investment/investment.jpg";
-import advisory from "@/assets/investment/advisory.jpg";
-import facility from "@/assets/investment/facility.jpg";
-import network from "@/assets/investment/network.jpg";
-import mentorship from "@/assets/investment/mentorship.jpg"
-import Contact from "@/Sections/Contact";
+import investment from "./../assets/investment/investment.jpg";
+import advisory from "./../assets/investment/advisory.jpg";
+import facility from "./../assets/investment/facility.jpg";
+import network from "./../assets/investment/network.jpg";
+import mentorship from "./../assets/investment/mentorship.jpg"
+import Contact from "./../Sections/Contact";
 
 const page = () => {
   return (
