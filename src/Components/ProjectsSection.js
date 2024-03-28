@@ -23,20 +23,18 @@ const ProjectsSection = () => {
       </div>
       <div className=" w-[80%] mt-6 mb-12 mx-auto flex items-center justify-center">
         <p className=" text-center text-[16px]">
-          Our experts know what it takes to offer you an all-inclusive Apps
-          designing and development services. Working with a company like eForte
-          with a decade of experience entitles you to a diverse team of experts
-          who are the connoisseurs of the software designing and development
-          industry.
+          At Fame Business Solutions, our experienced team specializes in
+          all-inclusive app design and development services. With a decade of
+          expertise, we offer top-notch solutions tailored to your needs.
         </p>
       </div>
       <div className=" md:container pb-16 mx-auto px-8">
         <div className="flex flex-wrap justify-evenly md:px-4 px-0 py-4 md:mx-auto w-[100%] z-30 rounded-full">
           <button
             className={`${
-              activeTab === 0 ? "bg-[#002244] font-[poppins] text-white" : ""
+              activeTab === 0 ? "bg-[#002244]  text-white" : ""
             } 
-             py-3 px-4 m-2 text-[14px] font-[poppins] lg:text-[18px] text-[#838383]`}
+             py-3 px-4 m-2 text-[14px]  lg:text-[18px] text-[#838383]`}
             type="button"
             onClick={() => {
               setActiveTab(0);
@@ -46,9 +44,9 @@ const ProjectsSection = () => {
           </button>
           <button
             className={`${
-              activeTab === 1 ? " bg-[#002244] font-[poppins] text-white" : ""
+              activeTab === 1 ? " bg-[#002244]  text-white" : ""
             } 
-        py-3 px-4 m-2 text-[14px] font-[poppins] lg:text-[18px] text-[#838383]`}
+        py-3 px-4 m-2 text-[14px]  lg:text-[18px] text-[#838383]`}
             type="button"
             onClick={() => {
               setActiveTab(1);
@@ -58,9 +56,9 @@ const ProjectsSection = () => {
           </button>
           <button
             className={`${
-              activeTab === 2 ? "bg-[#002244] font-[poppins] text-white" : ""
+              activeTab === 2 ? "bg-[#002244]  text-white" : ""
             } 
-        py-3 px-4 m-2 text-[14px] font-[poppins] lg:text-[18px] text-[#838383]`}
+        py-3 px-4 m-2 text-[14px]  lg:text-[18px] text-[#838383]`}
             type="button"
             onClick={() => {
               setActiveTab(2);
@@ -70,9 +68,9 @@ const ProjectsSection = () => {
           </button>
           <button
             className={`${
-              activeTab === 3 ? "  bg-[#002244] font-[poppins] text-white" : ""
+              activeTab === 3 ? "  bg-[#002244]  text-white" : ""
             } 
-        py-3 px-4 m-2 text-[14px] font-[poppins] lg:text-[18px] text-[#838383]`}
+        py-3 px-4 m-2 text-[14px]  lg:text-[18px] text-[#838383]`}
             type="button"
             onClick={() => {
               setActiveTab(3);
@@ -82,9 +80,9 @@ const ProjectsSection = () => {
           </button>
           <button
             className={`${
-              activeTab === 4 ? "  bg-[#002244] font-[poppins] text-white" : ""
+              activeTab === 4 ? "  bg-[#002244]  text-white" : ""
             } 
-        py-3 px-4 m-2 text-[14px] font-[poppins] lg:text-[18px] text-[#838383]`}
+        py-3 px-4 m-2 text-[14px]  lg:text-[18px] text-[#838383]`}
             type="button"
             onClick={() => {
               setActiveTab(4);
